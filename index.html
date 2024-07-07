@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front Page</title>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    user-select: none;
+}
+
+.column {
+    height: 90vh;
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+.column:hover{
+    background-color: rgba(225,225, 225, 0.8);
+}
+.column img {
+    padding-top: 30%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.column p {
+    font-size: 18px;
+    color: gray;
+    font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column" onclick="window.location.href = 'student/Student_login.php'">
+            <img src="images/students.png" alt="Student Icon">
+            <p>Are you a student?</p>
+        </div>
+        <hr style="height: 70%;">
+        <div class="column" onclick="window.location.href = 'collage/Collage_login.php'">
+            <img src="images/collage.png" alt="School Icon">
+            <p>College/College Employee</p>
+        </div>
+    </div>
+</body>
+</html>
